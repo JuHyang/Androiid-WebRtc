@@ -30,9 +30,15 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    buildFeatures {
+        dataBinding = true
+    }
 }
 
 dependencies {
+    // webRTC
+    implementation 'org.webrtc:google-webrtc:1.0.23995'
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation 'androidx.core:core-ktx:1.6.0'
